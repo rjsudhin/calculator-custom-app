@@ -5,13 +5,16 @@
 }
 
 :root.dark {
-  --bg-color: #252525;
-  --color: #fff
+  --bg-color: #2e2b2bf3;
+  --color: #ccc;
+  --bg-display-screen: rgba(110, 167, 110, 0.226);
+  --dark-bx-shadow: 1px 1px 1px 1px #0a0a0ab0;
 }
 
 :root.light {
-  --bg-color: #fff;
-  --color: #252525;
+  --bg-color: #ccc;
+  --color: #2e2b2bf3;
+  --dark-bx-shadow: 1px 1px 1px 1px #0a0a0ab0;
 }
 
 body {
@@ -23,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bg-color);
 }
 
 #header-section {
@@ -51,10 +55,11 @@ body {
     align-items: center;
     
     #display-screen {
-      border: 1px solid black;
       width: 180px;
       height: 50px;
       border-radius: 0.8rem;
+      background-color: var(--bg-display-screen);
+      box-shadow: var(--dark-bx-shadow);
     }
 
     button {
@@ -62,6 +67,9 @@ body {
       height: 50px;
       border-radius: 1rem;
       border: none;
+      background-color: var(--bg-color);
+      box-shadow: var(--dark-bx-shadow);
+      color: var(--color);
     }
   }
 }
