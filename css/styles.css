@@ -79,15 +79,17 @@ body {
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
-      padding-right: 1rem;
       color: var(--color);
       .previous-display {
         font-size: 0.9rem;
+        padding-right: 1.1rem;
         font-weight: bold;
       }
 
       .current-display {
-        font-size: 1.1rem;
+        padding-right: 0.9rem;
+        font-size: 1.2rem;
+        font-weight: bold;
       }
     }
 
