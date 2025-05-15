@@ -12,6 +12,16 @@ const decimal = document.querySelector('.decimal')
 const equal = document.querySelector('.equal')
 
 
+// clear button setup
+clearBtn.addEventListener('click', () => {
+  previousValue = ''
+  currentValue = ''
+  operator = ''
+  previousDisplay.textContent = previousValue
+  currentDisplay.textContent = currentValue
+})
+
+
 // Numbers clicks
 numbers.forEach(num => {
   num.addEventListener('click', (e) => {
@@ -31,6 +41,13 @@ operators.forEach(op => {
 })
 
 
+// setup equal button
+equal.addEventListener('click', () => {
+  // calculation configure
+  calculatingValues() 
+})
+
+
 
 function handlingNumbers(num) {
   if (currentValue.length <= 8) {
@@ -43,4 +60,30 @@ function handlingOperators(op) {
   operator = op
   previousValue = currentValue 
   currentValue = ''
+}
+
+
+
+function calculatingValues() {
+  // make strings to numbers
+  previousValue = parseFloat(previousValue)
+  currentValue = parseFloat(currentValue)
+  
+  switch(operator) {
+    case 'X':
+      previousValue *= currentValue
+      break
+    case '/':
+      previousValue /= currentValue
+      break
+    case '+':
+      previousValue += currentValue
+      break
+    case '-':
+      previousValue -= currentValue
+      break
+  }
+
+
+  console.log(`The answer is ${previousValue}`)
 }
