@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root.dark {
+  --bg-color: #252525;
+  --color: #fff
+}
+
+:root.light {
+  --bg-color: #fff;
+  --color: #252525;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0 1rem;
+  #app-heading {
+    font-size: clamp(1.5rem, 2vw, 2.6rem);
+  }
+}
+
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  .section {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    #display-screen {
+      border: 1px solid black;
+      width: 180px;
+      height: 50px;
+      border-radius: 0.8rem;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      border-radius: 1rem;
+      border: none;
+    }
+  }
+}
+
+#footer-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
