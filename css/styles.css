@@ -60,6 +60,19 @@ body {
       border-radius: 0.8rem;
       background-color: var(--bg-display-screen);
       box-shadow: var(--dark-bx-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 1rem;
+      .previous-display {
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+
+      .current-display {
+        font-size: 1.1rem;
+      }
     }
 
     button {
@@ -70,6 +83,10 @@ body {
       background-color: var(--bg-color);
       box-shadow: var(--dark-bx-shadow);
       color: var(--color);
+    }
+
+    button:active {
+      box-shadow: none;
     }
   }
 }
