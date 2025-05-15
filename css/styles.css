@@ -7,7 +7,7 @@
 :root.dark {
   --bg-color: #2e2b2bf3;
   --color: #ccc;
-  --bg-display-screen: rgba(110, 167, 110, 0.226);
+  --bg-display-screen: rgba(85, 104, 85, 0.226);
   --dark-bx-shadow: 1px 1px 1px 1px #0a0a0ab0;
 }
 
