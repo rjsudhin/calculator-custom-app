@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  padding: 2rem 1rem;
+  padding: 2.1rem 1rem;
   border-radius: 0.8rem;
   box-shadow: var(--dark-bx-shadow);
   .section {
