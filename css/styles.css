@@ -15,6 +15,7 @@
   --bg-color: #ccc;
   --color: #2e2b2bf3;
   --dark-bx-shadow: 1px 1px 1px 1px #0a0a0ab0;
+  --bg-display-screen: #7979799c;
 }
 
 body {
@@ -58,7 +59,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-
+  padding: 2rem 1rem;
+  border-radius: 0.8rem;
+  box-shadow: var(--dark-bx-shadow);
   .section {
     width: 250px;
     height: 60px;
@@ -77,6 +80,7 @@ body {
       justify-content: flex-end;
       align-items: flex-end;
       padding-right: 1rem;
+      color: var(--color);
       .previous-display {
         font-size: 0.9rem;
         font-weight: bold;
