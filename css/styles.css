@@ -39,6 +39,18 @@ body {
   #app-heading {
     font-size: clamp(1.5rem, 2vw, 2.6rem);
   }
+
+  .dark-light-toggle {
+    width: 90px;
+    height: 25px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: var(--dark-bx-shadow);
+    color: var(--color);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--bg-color);
+  }
 }
 
 
