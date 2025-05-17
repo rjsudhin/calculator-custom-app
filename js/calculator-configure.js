@@ -51,14 +51,16 @@ operators.forEach(op => {
 // setup equal button
 equal.addEventListener('click', () => {
   // calculation configure
-  calculatingValues() 
-  if (previousValue.length >= 5) {
-    previousValue = previousValue.slice(0,5) + '...'
-  }
-  previousDisplay.textContent += ' ' + currentValue
-  currentDisplay.textContent = previousValue
-  currentValue = previousValue
-  previousValue = ''
+  if (!previousValue == '' && !currentValue == '') {
+    calculatingValues() 
+    if (previousValue.length >= 5) {
+      previousValue = previousValue.slice(0,5) + '...'
+    }
+    previousDisplay.textContent += ' ' + currentValue
+    currentDisplay.textContent = previousValue
+    currentValue = previousValue
+    previousValue = ''
+  } // else not wroking calculations
 })
 
 
