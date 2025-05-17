@@ -35,15 +35,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  padding: 0 1rem;
+  padding: 0.5rem 1.2rem;
   #app-heading {
     font-size: clamp(1.5rem, 2vw, 2.6rem);
   }
 
-  .dark-light-toggle {
-    width: 90px;
-    height: 25px;
+  #dark-light-theme-toggle {
+    width: 32px;
+    height: 30px;
     border: none;
     border-radius: 0.5rem;
     box-shadow: var(--dark-bx-shadow);
@@ -114,5 +113,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  padding: 1.2rem 0;
 }

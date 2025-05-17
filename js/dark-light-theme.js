@@ -1,8 +1,11 @@
 const rootElement = document.documentElement
 rootElement.classList.add('light')
 
-const darkLightToggle = document.querySelector('.dark-light-toggle')
-darkLightToggle.addEventListener('click', (e) => {
+const darkLightThemeToggle = document.querySelector('#dark-light-theme-toggle')
+console.log(darkLightThemeToggle)
+
+
+darkLightThemeToggle.addEventListener('click', (e) => {
   if (rootElement.className === 'light') {
     rootElement.classList.remove('light')
     rootElement.classList.add('dark')
