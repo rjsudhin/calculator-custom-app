@@ -2,7 +2,7 @@ const rootElement = document.documentElement
 rootElement.classList.add('light')
 
 const darkLightThemeToggle = document.querySelector('#dark-light-theme-toggle')
-console.log(darkLightThemeToggle)
+
 
 
 darkLightThemeToggle.addEventListener('click', (e) => {
