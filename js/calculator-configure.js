@@ -30,6 +30,13 @@ numbers.forEach(num => {
   })
 })
 
+// decimal clicks
+decimal.addEventListener('click', () => {
+  if (!currentValue.includes('.')) {
+    currentValue += '.'
+  }
+})
+
 
 // Operators clicks
 operators.forEach(op => {
