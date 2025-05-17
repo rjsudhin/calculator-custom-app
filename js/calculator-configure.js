@@ -53,8 +53,8 @@ equal.addEventListener('click', () => {
   // calculation configure
   if (!previousValue == '' && !currentValue == '') {
     calculatingValues() 
-    if (previousValue.length >= 5) {
-      previousValue = previousValue.slice(0,5) + '...'
+    if (previousValue.length >= 8) {
+      previousValue = previousValue.slice(0,6) + '...'
     }
     previousDisplay.textContent += ' ' + currentValue
     currentDisplay.textContent = previousValue
