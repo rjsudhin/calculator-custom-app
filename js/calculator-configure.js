@@ -85,5 +85,16 @@ function calculatingValues() {
   }
 
 
+  // round the maximum values 
+  previousValue = maximumValuesRounding(previousValue)
+  // number back to string
+  previousValue = previousValue.toString()
+  currentValue = currentValue.toString()
+  console.log(`previous value ${typeof previousValue}`)
   console.log(`The answer is ${previousValue}`)
+}
+
+// when any unwanted or || getting a long decimal value
+function maximumValuesRounding(num) {
+  return Math.round(1000 * num) / 1000
 }
